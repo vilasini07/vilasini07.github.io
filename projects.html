@@ -2,9 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Projects | Vilasini</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General reset and layout */
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a5276;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #d6eaf8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #154360;
+      font-size: 1.6em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    article {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    article:last-child {
+      border-bottom: none;
+    }
+
+    h3 {
+      color: #1a5276;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    strong {
+      color: #154360;
+    }
+
+    a {
+      color: #1a5276;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Projects</h1>
@@ -18,28 +131,34 @@
 
   <main>
     <section>
-      <h2>ML and Data Science Projects</h2>
+      <h2>Machine Learning & Data Science Projects</h2>
+
       <article>
         <h3>Spotify Dataset Analysis</h3>
         <p>
-          Performed EDA, data cleaning and feature engineering. Built a Bayesian Neural Network to regress track popularity, clustered “mood buckets” using Gaussian Mixture Models,
-and classified genres using Bayesian logistic regression. 
-          <strong>Tech stack:</strong> Python, Pandas, PyTorch, Matplotlib, Scikit-learn, Numpy
+          Conducted exploratory data analysis, cleaning, and feature engineering on Spotify track metadata.
+          Built a <strong>Bayesian Neural Network</strong> to predict track popularity, clustered songs into “mood buckets” using
+          <strong>Gaussian Mixture Models</strong>, and implemented <strong>Bayesian Logistic Regression</strong> for genre classification.
         </p>
-        <p><a href="https://github.com/vilasini07/Data_Analysis/tree/main/Spotify_analysis" target="_blank">View on GitHub</a></p>
+        <p><strong>Tech stack:</strong> Python, Pandas, PyTorch, Matplotlib, Scikit-learn, NumPy</p>
+        <p><a href="https://github.com/vilasini07/Data_Analysis/tree/main/Spotify_analysis" target="_blank">🔗 View on GitHub</a></p>
       </article>
 
       <article>
-        <h3>IoT Sensor Data Estimation(Kaggle project) </h3>
+        <h3>IoT Sensor Data Estimation (Kaggle Project)</h3>
         <p>
-          Cleaned multi-source sensor streams and imputed missing readings using the EM algorithm with Gaussian Mixture
-Models.
-          <strong>Tech stack:</strong> Python, Pandas, Numpy
+          Cleaned and synchronized multi-source sensor streams to handle irregular sampling and missing values.
+          Used the <strong>Expectation–Maximization (EM) algorithm</strong> with <strong>Gaussian Mixture Models</strong> to impute missing sensor readings
+          and improve downstream predictive performance.
         </p>
-        <p><a href="https://github.com/vilasini07/Data_Analysis/tree/main/IoT_sensor_estimation" target="_blank">View on GitHub</a></p>
+        <p><strong>Tech stack:</strong> Python, Pandas, NumPy</p>
+        <p><a href="https://github.com/vilasini07/Data_Analysis/tree/main/IoT_sensor_estimation" target="_blank">🔗 View on GitHub</a></p>
       </article>
-
     </section>
   </main>
+
+  <footer>
+    © 2025 Vilasini — All Rights Reserved
+  </footer>
 </body>
 </html>
