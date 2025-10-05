@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Data Analysis Mini Project</title>
+  <title>Mini Project on Data Visualizations</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+    header, nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1, h2, h3 {
+      color: #1a5276;
+    }
+    section {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    ul {
+      margin-left: 25px;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Projects</h1>
@@ -20,14 +54,113 @@
     <section>
       <h2>📊 Mini Projects on Data Analysis</h2>
       <article>
-        <h3>Rainfall data analysis</h3>
+        <h3>Rainfall Data Analysis</h3>
         <p>
-          Took yearly regional rainfall data from "https://data.gov.in". Did analysis of rainfall trends using various plots(matplotlib and seaborn).
-          <strong>Tech stack:</strong> Python, Pandas, Matplotlib, Seaborn
+          This project explores Indian regional rainfall trends from <strong>1901–2017</strong> using datasets sourced from 
+          <a href="https://data.gov.in" target="_blank">data.gov.in</a>. 
+          Various visualizations and statistical summaries are used to understand temporal and regional variations in rainfall.
         </p>
+        <p><strong>Tech stack:</strong> Python, Pandas, Matplotlib, Seaborn</p>
         <p><a href="https://github.com/vilasini07/Data_Analysis/tree/main/Rainfall%20data" target="_blank">View on GitHub</a></p>
       </article>
+    </section>
 
+    <section>
+      <h3>Dataset</h3>
+      <ul>
+        <li><strong>Source:</strong> data.gov.in</li>
+        <li><strong>Time Period:</strong> 1901–2017</li>
+        <li><strong>Coverage:</strong> Regional (based on “SUBDIVISION” classification)</li>
+        <li><strong>Key Variables:</strong> Annual rainfall (mm), Seasonal rainfall (JJAS – monsoon months), Region/Subdivision identifiers</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Objectives</h3>
+      <ul>
+        <li>Explore the contribution of monsoon (JJAS) rainfall to annual rainfall.</li>
+        <li>Compare seasonal rainfall characteristics before and after the “computer era” (pre-1955 vs post-1955).</li>
+        <li>Examine decadal changes in rainfall distribution across regions.</li>
+        <li>Identify correlations and similarities among regional rainfall patterns.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Observations</h3>
+
+      <h4>1️⃣ Annual vs. JJAS Rainfall (Scatter Plot)</h4>
+      <p>
+        Strong positive linear relationship indicates JJAS rainfall dominates annual totals across all regions.
+        North-eastern regions show more scatter, implying significant non-monsoon rainfall. 
+        South-East and South regions (e.g., Andaman & Nicobar, Tamil Nadu) deviate due to Northeast Monsoon dependency.
+      </p>
+      <img src="https://raw.githubusercontent.com/vilasini07/Data_Analysis/main/Rainfall%20data/plots/annual_VS_monsoon.png" alt="Scatter plot: Annual vs JJAS Rainfall">
+
+      <h4>2️⃣ Seasonal Rainfall Comparison: Pre- vs Post-Computer Era (Box Plot)</h4>
+      <p>
+        Using 1955 as the start of the “computer era”, box plots show:
+      </p>
+      <ul>
+        <li>JJAS season contributes the most rainfall across regions.</li>
+        <li>Post-1955, many regions show slightly lower median rainfall but more extreme outliers.</li>
+        <li>Variability shifts regionally — some regions narrow while others (NE, SW, S) show more spread.</li>
+      </ul>
+      <img src="https://raw.githubusercontent.com/vilasini07/Data_Analysis/main/Rainfall%20data/plots/seasonal_rainfall.png" alt="Box plot comparing seasonal rainfall pre- and post-1955">
+
+      <h4>3️⃣ Decadal Comparison: 1901–1910 vs 2008–2017 (Bar Plot)</h4>
+      <ul>
+        <li>Coastal Karnataka, Kerala, and Konkan & Goa remain the wettest regions.</li>
+        <li>West Rajasthan and Saurashtra & Kutch stay driest.</li>
+        <li>Eastern-central India (e.g., Jharkhand, Orissa) shows drying trends.</li>
+        <li>Western Ghats regions exhibit slight rainfall increase.</li>
+      </ul>
+      
+      <div class="image-pair">
+        <figure>
+          <img src="https://raw.githubusercontent.com/vilasini07/Data_Analysis/main/Rainfall%20data/plots/annual_1901-10.png" 
+               alt="Rainfall distribution 1901–1910">
+          <figcaption>Rainfall (1901–1910)</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="https://raw.githubusercontent.com/vilasini07/Data_Analysis/main/Rainfall%20data/plots/annual_2008-17.png" 
+               alt="Rainfall distribution 2008–2017">
+          <figcaption>Rainfall (2008–2017)</figcaption>
+        </figure>
+      </div>
+
+
+      <h4>4️⃣ Regional Correlation Analysis (Heatmap)</h4>
+      <ul>
+        <li>SW-W, C-N, and SW-S pairs show strong positive correlations.</li>
+        <li>NE-W has negative correlation — distinct rainfall patterns.</li>
+        <li>North-East behaves uniquely with minimal similarity to others.</li>
+      </ul>
+      
+      <div class="image-pair">
+        <figure>
+          <img src="https://raw.githubusercontent.com/vilasini07/Data_Analysis/main/Rainfall%20data/plots/regional_cor_annual.png" 
+               alt="Regionwise Annual rainfall correlation heatmap">
+          <figcaption>Annual Rainfall Correlation</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="https://raw.githubusercontent.com/vilasini07/Data_Analysis/main/Rainfall%20data/plots/seasonal_correlation.png" 
+               alt="Seasonal rainfall correlation heatmap">
+          <figcaption>Seasonal Rainfall Correlation</figcaption>
+        </figure>
+      </div>
+
+    <section>
+      <h3>Conclusion</h3>
+      <ul>
+        <li>Monsoon months (JJAS) dominate Indian annual rainfall patterns.</li>
+        <li>Post-1955, increased variability and extreme events observed.</li>
+        <li>Eastern-central India shows drying trends, western coast stable or rising rainfall.</li>
+        <li>Regional correlations reveal distinct climatic zones, with NE remaining unique.</li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
+
