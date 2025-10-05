@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mini Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Projects | Vilasini</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a5276;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #d6eaf8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #154360;
+      font-size: 1.6em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    article {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    article:last-child {
+      border-bottom: none;
+    }
+
+    h3 {
+      color: #1a5276;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Projects</h1>
@@ -19,41 +118,55 @@
   <main>
     <section>
       <h2>Mini Projects</h2>
+
       <article>
         <h3>Cash Flow Optimization via Linear Programming</h3>
         <p>
-          Formulated multi-period loan and investment optimization as LP, solved using Revised Simplex, and validated with solver results.
+          Formulated a multi-period investment and loan optimization problem as a <strong>Linear Program</strong>.
+          Solved it using the <strong>Revised Simplex Method</strong> and validated the results using numerical solvers to
+          achieve optimal fund allocation and cash flow stability.
         </p>
       </article>
 
       <article>
         <h3>Coal Plant Efficiency Optimization</h3>
         <p>
-          Built quadratic efficiency model using GD, mini-batch and Adam. Solved for optimal parameters via Newton, BFGS, and Conjugate Gradient.
+          Modeled thermal power plant efficiency as a <strong>quadratic optimization problem</strong>.
+          Trained using <strong>Gradient Descent</strong>, <strong>Mini-batch GD</strong>, and <strong>Adam Optimizer</strong>,
+          and compared solutions from <strong>Newton’s Method</strong>, <strong>BFGS</strong>, and <strong>Conjugate Gradient</strong>.
         </p>
       </article>
 
       <article>
-        <h3>Indian name generation and transliteration using FNN and RNN</h3>
+        <h3>Indian Name Generation and Transliteration using FNN & RNN</h3>
         <p>
-         Implemented FNN, RNN and RNN with attention models for name generation and transliteration. Beam search was implemented for decoding strategy. Obtained BLEU score of 0.7 for RNN and 0.789 for RNN with attention.
+          Developed <strong>Feedforward (FNN)</strong>, <strong>Recurrent (RNN)</strong>, and <strong>Attention-based RNN</strong> models
+          for Indian name generation and transliteration. Implemented <strong>Beam Search</strong> for decoding.
+          Achieved BLEU scores of <strong>0.70 (RNN)</strong> and <strong>0.789 (RNN with Attention)</strong>.
         </p>
       </article>
 
       <article>
-        <h3>Singular Value Decomposition</h3>
+        <h3>Singular Value Decomposition (SVD)</h3>
         <p>
-          Compressed image using SVD based on Eckart-Young theorem.
+          Demonstrated image compression using <strong>SVD</strong> based on the <strong>Eckart–Young theorem</strong>,
+          balancing reconstruction accuracy and compression ratio.
         </p>
       </article>
 
       <article>
-        <h3>Page Rank</h3>
+        <h3>PageRank Algorithm</h3>
         <p>
-          Calculated Page Rank using Power Iteration Algorithm.
+          Implemented <strong>PageRank</strong> using the <strong>Power Iteration method</strong> to simulate web link structures.
+          Verified convergence properties and rank stability across iterations.
         </p>
       </article>
+
     </section>
   </main>
+
+  <footer>
+    © 2025 Vilasini — All Rights Reserved
+  </footer>
 </body>
 </html>
