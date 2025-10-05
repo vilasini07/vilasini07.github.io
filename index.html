@@ -1,50 +1,204 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vilasini Ashokan | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background-color: #f8f9fb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a5276;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 15px auto;
+      font-size: 1.05em;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #d6eaf8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #154360;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      border-left: 5px solid #1a5276;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #1a5276;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .contact-links a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-  <h1>Vilasini Ashokan</h1>
-  <p>Currently I'm a data science student at IISc. Equipped with mathematical background and a passion for exploring the world of data science, I'm eager to collaborate, learn, and make an impact in the intersection of mathematics and data science.</p>
-  <nav>
-    <a href="index.html">Home</a> | 
-    <a href="projects.html">Projects</a> |
-    <a href="mini_projects.html">Mini Projects</a> |
-    <a href="data_analysis.html">Data Visualization</a> 
-  </nav>
+    <h1>Vilasini Ashokan</h1>
+    <p>
+      Data Science student at <strong>Indian Institute of Science (IISc)</strong> <br>
+      Equipped with mathematical background and a passion for exploring the world of data science, I'm eager to collaborate, learn, and make an impact in the intersection of mathematics and data science.
+    </p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="mini_projects.html">Mini Projects</a> |
+      <a href="data_analysis.html">Data Visualization</a>
+    </nav>
   </header>
+
   <main>
     <!-- Education Section -->
     <section id="education">
       <h2>🎓 Education</h2>
       <ul>
-        <li><strong>Indian Institute of Science (IISc)</strong> — M.Tech / Computational & Data Science (2024–Present)</li>
-        <li><strong>University of Hyderabad</strong> — M.Sc. Mathematics (2021–2023)</li>
-        <li><strong>M.O.P. Vaishnav College for Women, Chennai</strong> — B.Sc. Mathematics (2018—2021)</li>
+        <li><strong>Indian Institute of Science (IISc)</strong> — M.Tech, Computational & Data Science (2024–Present)</li>
+        <li><strong>University of Hyderabad</strong> — M.Sc., Mathematics (2021–2023)</li>
+        <li><strong>M.O.P. Vaishnav College for Women, Chennai</strong> — B.Sc., Mathematics (2018–2021)</li>
       </ul>
     </section>
 
-    <!-- Internships / Work Experience Section -->
+    <!-- Internships Section -->
     <section id="experience">
-      <h2>💼 Internships </h2>
+      <h2>💼 Internships</h2>
       <ul>
-        <li><strong>Data Science Intern</strong>, Myntra — Worked on LangGraph and MCP tools for multi-agent conversational bot. (May-July 2025)</li>
-        <li><strong>Summer Intern</strong>, Mahindra University — Explored state-of-the-art denoising models for mitigating multiplicative noise in images. Evaluated methods to enhance
-PSNR performance by experimenting with PDE-based techniques and optimizing diffusion coefficients. (June-Aug 2023)</li>
+        <li>
+          <strong>Data Science Intern</strong>, Myntra (May–July 2025) —
+          Worked on <strong>LangGraph</strong> and <strong>Model Context Protocol (MCP)</strong> for a multi-agent conversational bot. 
+          Developed orchestrator and sub-agent logic integrating OpenAI function calling. Created demo using Streamlit.
+        </li>
+        <li>
+          <strong>Summer Intern</strong>, Mahindra University (June–Aug 2023) —
+          Explored state-of-the-art denoising models for mitigating multiplicative noise in images. Evaluated methods to enhance PSNR performance by experimenting with PDE-based techniques and optimizing diffusion coefficients.
+        </li>
       </ul>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
-      <h2>Skills </h2>
+      <h2>🧠 Skills</h2>
       <ul>
-        <li><strong>Programming Languages:</strong> C++, Python, MATLAB, LATEX, C </li>
-        <li><strong>Tools:</strong> Numpy, Pandas, Sci-kit Learn, PyTorch </li>
-        <li><strong>Technical:</strong> Machine Learning, Optimization, Deep Learning</li>
+        <li><strong>Programming:</strong> Python, C++, MATLAB, LaTeX, C</li>
+        <li><strong>Libraries & Tools:</strong> NumPy, Pandas, Scikit-learn, PyTorch, Matplotlib</li>
+        <li><strong>Technical Areas:</strong> Machine Learning, Optimization, Deep Learning, Data Analysis</li>
       </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li> Supervised Machine Learning: Regression and Classification — Coursera (DeepLearning.AI) (July 2024)</li>
+        <li> Complete Data Structures and Algorithms in Python - Udemy (June 2024)</li>
+      </ul>
+    </section>
+
+    <!-- Workshops / Summer Schools Section -->
+    <section id="workshops">
+      <h2>🏫 Workshops & Summer Schools</h2>
+      <ul>
+        <li>Attended Vigyan Vidushi 2022 - Mathematics, TIFR Mumbai</li>
+        <li>Attended STCS Vigyan Vidushi 2021, TIFR Mumbai (held online)</li>
+        <li>Attended IWM Winter School in Mathematics for Young Women 2019, IISER TVM</li>
+        <li>Attended Summer School for Women in Mathematics & Statistics 2019, ICTS BangaloreS</li></li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p class="contact-links">
+        <a href="mailto:vilasiniashokan1309@gmail.com" target="_blank">✉️ Email</a> |
+        <a href="https://www.linkedin.com/in/vilasini-ashokan-304390221" target="_blank">💼 LinkedIn</a> |
+        <a href="https://github.com/vilasini07" target="_blank">💻 GitHub</a>
+      </p>
     </section>
   </main>
 
+  <footer>
+    © 2025 Vilasini Ashokan — All Rights Reserved
+  </footer>
 </body>
 </html>
